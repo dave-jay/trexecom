@@ -17,7 +17,7 @@
                     <?php print 'This Domain alredy exsist' . $errors ?> 
                 </div>
 
-                <div style="clear:both;"></div>DOmain
+                <div style="clear:both;"></div>
             </div>
         <?php } ?>
         <div class="form-group">

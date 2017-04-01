@@ -5,7 +5,6 @@
 //        alert("S");
     });
     function submit() {
-
         $.ajax({
             url: '<?php echo _U ?>apiTest',
             dataType: "json",
@@ -15,12 +14,10 @@
                 SearchData: 1,
                 txtDomains: $("#txtdomain").val()
             }, success: function (r) {
-//                alert(r);
                 if (r.error == "") {
-                    $("#MSG").text("This Domain Is Valide");
+                    $("#MSG").text("This Domain Is Valid");
                     $("#txtdomain").css("background-color", "#FFFFFF");
                     $("#MSG").css("color", "black");
-//                    alert("Not Similar");
                 } else {
                     $("#MSG").text("This Domain Is Already Exist");
                     $("#MSG").css("color", "red");
